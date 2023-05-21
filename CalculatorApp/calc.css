@@ -1,0 +1,32 @@
+.container {
+    border: 2px solid black;
+    max-width: 400px;
+    margin: 100px auto;
+}
+
+.display {
+    margin: auto;
+    max-width: 400px;
+    height: 30px;
+    display: flex;
+    justify-content: end;
+}
+
+.button-container {
+    border-top: 2px solid black;
+    margin: auto;
+    max-width: 400px;
+    max-height: 1000px;
+}
+
+.button-row {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+}
+
+button {
+    width: 100%;
+    height: 50px;
+}
