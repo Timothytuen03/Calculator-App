@@ -11,59 +11,62 @@
 <body>
     <div class="container">
         <div class="display">
-            <output></output>
+            <p class="output">0</p>
         </div>
         <div class="button-container">
             <div class="button-row">
                 <button>2nd</button>
                 <button>&pi;</button>
                 <button>e</button>
-                <button>C</button>
-                <button>backspace</button>
+                <button class="clear">C</button>
+                <button class="op" value="del">backspace</button>
             </div>
             <div class="button-row">
                 <button>x^2</button>
                 <button>1/X</button>
-                <button>|X|</button>
+                <button class="modify" value="abs">|X|</button>
                 <button>exp</button>
-                <button>mod</button>
+                <button class="op" value="%">mod</button>
             </div>
             <div class="button-row">
                 <button>&Sqrt;X</button>
-                <button>(</button>
-                <button>)</button>
+                <button class="modify" value="(">(</button>
+                <button class="modify" value=")">)</button>
                 <button>n!</button>
-                <button>&divide;</button>
+                <button class="op" value="/">&divide;</button>
             </div>
             <div class="button-row">
                 <button>x^y</button>
-                <button>7</button>
-                <button>8</button>
-                <button>9</button>
-                <button>&times;</button>
+                <button class="num" value="7">7</button>
+                <button class="num" value="8">8</button>
+                <button class="num" value="9">9</button>
+                <button class="op" value="x">&times;</button>
             </div>
             <div class="button-row">
                 <button>10^x</button>
-                <button>4</button>
-                <button>5</button>
-                <button>6</button>
-                <button>&minus;</button>
+                <button class="num" value="4">4</button>
+                <button class="num" value="5">5</button>
+                <button class="num" value="6">6</button>
+                <button class="op" value="-">&minus;</button>
             </div>
             <div class="button-row">
                 <button>log</button>
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-                <button>&plus;</button>
+                <button class="num" value="1">1</button>
+                <button class="num" value="2">2</button>
+                <button class="num" value="3">3</button>
+                <button class="op" value="+">&plus;</button>
             </div>
             <div class="button-row">
                 <button>ln</button>
-                <button>&plusmn;</button>
-                <button>0</button>
-                <button>.</button>
-                <button>=</button>
+                <button class="modify" value="negate">&plusmn;</button>
+                <button class="num" value="0">0</button>
+                <button class="modify" value="decimal">.</button>
+                <button class="op" value="=">=</button>
             </div>
         </div>
     </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="Calc.js"></script>
 </body>
 </html>
